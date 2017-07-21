@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="../../favicon.ico">
+
+    <title>CVM</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="./css/bootstrap.min.css" rel="stylesheet">
+    <link href="./css/bootstrap-theme.css" rel="stylesheet">
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <link href=".css/ie10-viewport-bug-workaround.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+      <link href="./css/styles.css" rel="stylesheet">
+    <link href="./css/grid.css" rel="stylesheet">
+    <link href="./css/skills.css" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.11.1/jquery-ui.min.js"></script>
+
+
+
+    <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
+    <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+    <script src="../../assets/js/ie-emulation-modes-warning.js"></script>
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <script>
+    $(document).ready(function(){
+
+
+      $(window).scroll(function(){
+      if($("#probarSection").offset().top === $(window).scrollTop() + $(window).outerHeight()) {
+    $('.progress-bar').each(function() {
+
+            var bar_value = $(this).attr('aria-valuenow') + '%';
+            $(this).animate({ width: bar_value }, { duration: 1000, easing: 'easeOutCirc' });
+          });
+} else {
+    // something when the .target div invisible
+}
+})
+    });
+
+    </script>
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12"><!--first part of the cv-->
+        <div class="col-lg-7">
+        <div class="col-md-6">
+
+          <h1>Erdem Yilmaz</h1>
+
+        </div>
+        <div class="col-md-7">
+          <h2>Programmer</h2>
+        </div>
+        </div>
+        <div class="col-md-5">
+          <ul class="list-group">
+            <li class="list-group-item">Burwood 3125, VIC <span class="glyphicon glyphicon-home"> </span></li>
+            <li class="list-group-item">0435-8342-96 <span class="glyphicon glyphicon-earphone"> </span></li>
+            <li class="list-group-item">www.eyilmaz.org <span class="glyphicon glyphicon-new-window"> </span></li>
+            <li class="list-group-item">werdem@gmail.com <span class="glyphicon glyphicon-envelope"> </span></li>
+            <li class="list-group-item">
+              <div id="icons">
+
+                  <div class='iconna'><a target="_blank" href="www.hackerdem.com"><img  src="./images/facebook.png"></a></div>
+                  <div class='iconna'><img src="./images/linkedin.png"></div>
+                  <div class='iconna'><img src="./images/github.png"></div>
+              </div>
+            </li>
+          </ul>
+        </div>
+
+        <div class="col-md-3 text-center">
+          <h2>Profile</h2>
+            <img class="img-circle" src="./images/profile.png" alt="Generic placeholder image" width="140" height="140">
+
+          </div>
+
+        <div class="col-sm-9">
+          <div class="well"color="black">
+
+            <p>Master of Information Technology (Professional) graduate with an excellent work ethic and ability to
+learn and adopt to a changing environment. In addition to solid knowledge on ethical hacking concept,
+Python programming language, automated penetration testing tools, manual testing and knowledge on
+front-e</p>
+          </div>
+        </div>
+        </div> <!--end of first part of the cv-->
+
+        <div class="col-sm-9"><!--beginning of second part of the cv-->
+        <div class="col-sm-4 text-center">
+
+              <h4><span class="glyphicon glyphicon-star"></span> Certificates</h4>
+
+                <h4>Comptia Security +</h4>
+                  <img class="img-circle" src="./images/sec.png" alt="Generic placeholder image" width="70" height="70">
+                  <h4>Comptia Network +</h4>
+                    <img class="img-circle" src="./images/net.png" alt="Generic placeholder image" width="70" height="70">
+
+
+
+          </div>
+        <div id="probarSection" class="col-md-8 text-center">
+          <h2>Technical Skills</h2>
+          <div class="progress">
+            <div id="python" class="progress-bar" aria-valuenow="70">
+              <span>Python</span>
+
+            </div>
+            <!--<p>complete this section later</p>-->
+            <!--<p>way to go</p>-->
+          </div>
+          <div  class="progress">
+            <div id="ruby" class="progress-bar" aria-valuenow="50">
+              <span>Ruby</span>
+            </div>
+          </div>
+          <div  class="progress">
+            <div id="javascript" class="progress-bar" aria-valuenow="50">
+              <span>JavaScript / Node.js</span>
+            </div>
+          </div>
+          <div  class="progress" >
+            <div id="htmlcss" class="progress-bar" aria-valuenow="40" >
+              <span>HTML / CSS</span>
+            </div>
+          </div>
+          <div class="progress">
+            <div id="java" class="progress-bar" aria-valuenow="30">
+              <span>Java</span>
+            </div>
+          </div>
+
+          </div>
+          <div id="experiences" class="col-sm-12"><!--beginning of third part of the cv-->
+         <h2>Experiences</h2>
+         <div class="col-md-4 text-center">
+            <img class="img-circle" src="./images/action.png" alt="Generic placeholder image" width="70" height="70">
+           </div>
+         <div class="col-md-8">
+           <h4>Action OHS Consulting</h4>
+           <p>June 2017-September 2017</p>
+           </div>
+            <div class="col-md-4 text-center">
+            <img class="img-circle" src="./images/coles.png" alt="Generic placeholder image" width="70" height="70">
+           </div>
+         <div class="col-md-8">
+           <h4>Coles Vermont South</h4>
+           <p>June 2017-September 2017</p>
+           </div>
+
+         <div class="col-md-4 text-center">
+            <img class="img-circle" src="./images/is.png" alt="Generic placeholder image" width="70" height="70">
+           </div>
+         <div class="col-md-8">
+           <h4>Isbank A.S.</h4>
+           <p>June 2017-September 2017</p>
+           </div>
+         </div>
+        </div><!--end of second part of the cv-->
+
+        <div class="col-sm-3 text-center">
+
+              <h4><span class="	glyphicon glyphicon-education"></span> Education</h4>
+
+                <h4>Deakin University</h4>
+                <p>Master of Information Technology</p>
+                  <img class="img-circle" src="./images/deakin.png" alt="Generic placeholder image" width="70" height="70">
+                  <h4>Osmangazi University</h4>
+                  <p>Bachelor Of Statistics</p>
+                    <img class="img-circle" src="./images/ogu.png" alt="Generic placeholder image" width="70" height="70">
+
+
+
+          </div>
+          <div class="col-sm-3 text-center">
+
+              <h4><span class="	glyphicon glyphicon-user"></span> Publications </h4>
+
+                <div id="icons">
+
+                  <div class='iconna'><img  src="./images/au.png"></a></div>
+                  <div class='iconna'><img src="./images/fr.png"></div>
+                  <div class='iconna'><img src="./images/tur.png"></div>
+              </div>
+
+
+          </div>
+         
+          <div class="col-sm-3 text-center">
+
+              <h4><span class="	glyphicon glyphicon-user"></span> Soft Skills</h4>
+
+                <div id="icons">
+
+                  <div class='iconna'><img  src="./images/au.png"></a></div>
+                  <div class='iconna'><img src="./images/fr.png"></div>
+                  <div class='iconna'><img src="./images/tur.png"></div>
+              </div>
+
+
+          </div>
+         <div class="col-sm-12">
+           <h2 class="text-center">Portfolio</h2>
+           <!-- /.row -->
+
+        <!-- Project One -->
+        <div class="row">
+            <div class="col-md-7">
+                <a href="#">
+                    <img class="img-responsive" src="./images/website2.png"  alt="">
+                </a>
+            </div>
+            <div class="col-md-5">
+                <h3>Project One</h3>
+                <h4>Subheading</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium veniam exercitationem expedita laborum at voluptate. Labore, voluptates totam at aut nemo deserunt rem magni pariatur quos perspiciatis atque eveniet unde.</p>
+                <a class="btn btn-primary" href="#">View Project <span class="glyphicon glyphicon-chevron-right"></span></a>
+            </div>
+        </div>
+        <!-- /.row -->
+
+        <hr>
+         <!-- /.row -->
+
+        <!-- Project One -->
+        <div class="row">
+            <div class="col-md-7">
+                <a href="#">
+                    <img class="img-responsive" src="./images/website1.png" alt="">
+                </a>
+            </div>
+            <div class="col-md-5">
+                <h3>Project One</h3>
+                <h4>Subheading</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium veniam exercitationem expedita laborum at voluptate. Labore, voluptates totam at aut nemo deserunt rem magni pariatur quos perspiciatis atque eveniet unde.</p>
+                <a class="btn btn-primary" href="#">View Project <span class="glyphicon glyphicon-chevron-right"></span></a>
+            </div>
+        </div>
+        <!-- /.row -->
+
+        <hr>
+           </div>
+<div class="col-md-4">
+          <h2 class="text-center">Languages</h2>
+          </div>
+<div class="col-md-8">
+          <h2 class="text-center">Hobbies</h2>
+          </div>
+    </div> <!-- /row -->
+    </div> <!-- /container -->
+      
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>
+  </body>
+</html>

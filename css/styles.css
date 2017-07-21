@@ -1,0 +1,27 @@
+
+
+/* social media list goes here*/
+.iconna{
+  margin:0 auto;
+  padding:10px;
+  float:left;
+  width:50px;
+  height:50px;
+}
+.iconna img {
+
+    max-width: 130%;
+    max-height: 130%;
+}
+#icons{
+  height:45px;
+  display:inline-block;
+  text-align: center;
+  background-color:#FFFFFF;
+}
+
+
+#profileimage{
+  width: 150px;
+  height:150px;
+}
