@@ -1,7 +1,11 @@
 
 body{
-  background-color: grey;
+  background-color: #334960;
 
+}
+.container{
+  margin-top: 40px;
+  margin-bottom: 40px;
 }
 .row{
   padding-top: 40px;
@@ -19,15 +23,32 @@ body{
   background-color: white;
 
 }
-.glyphicon-star{
-  color:red;
+[class*="glyphicon-"]{
+  color:#334960;
 }
 h4 {
   margin-top: 25px;
 }
+h1{
+  font-weight: bold;
+}
+h2{
+  color:grey;
+  
+}
+.profile{
+margin-top:30px;
+}
+.bottomline{
+  border-bottom: 1px solid #ddd;
+  border-bottom: 1px solid rgba(86,61,124,.2);
+}
+.topline{
+  border-top: 1px solid #ddd;
+  border-top: 1px solid rgba(86,61,124,.2);
+}
 
 [class*="col-"] {
-
 
   background-color: white;
   background-color: white;

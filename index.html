@@ -37,9 +37,13 @@
     <![endif]-->
     <script>
     $(document).ready(function(){
+$('.progress-bar').each(function() {
 
+            var bar_value = $(this).attr('aria-valuenow') + '%';
+            $(this).animate({ width: bar_value }, { duration: 1000, easing: 'easeOutCirc' });
+          });
 
-      $(window).scroll(function(){
+      /*$(window).scroll(function(){
       if($("#probarSection").offset().top === $(window).scrollTop() + $(window).outerHeight()) {
     $('.progress-bar').each(function() {
 
@@ -49,7 +53,7 @@
 } else {
     // something when the .target div invisible
 }
-})
+})*/
     });
 
     </script>
@@ -58,11 +62,11 @@
   <body>
     <div class="container">
       <div class="row">
-        <div class="col-md-12"><!--first part of the cv-->
+        <div class="col-md-12 bottomline"><!--first part of the cv-->
         <div class="col-lg-7">
-        <div class="col-md-6">
+        <div class="col-md-9">
 
-          <h1>Erdem Yilmaz</h1>
+          <h1>ERDEM YILMAZ</h1>
 
         </div>
         <div class="col-md-7">
@@ -78,21 +82,22 @@
             <li class="list-group-item">
               <div id="icons">
 
-                  <div class='iconna'><a target="_blank" href="www.hackerdem.com"><img  src="./images/facebook.png"></a></div>
-                  <div class='iconna'><img src="./images/linkedin.png"></div>
-                  <div class='iconna'><img src="./images/github.png"></div>
+                  <div class='iconna'><a target="_blank" href="www.hackerdem.com"><img  src="./images/face1.png"></a></div>
+                  <div class='iconna'><img src="./images/linkedin1.png"></div>
+                  <div class='iconna'><img src="./images/github1.png"></div>
               </div>
             </li>
           </ul>
         </div>
 
         <div class="col-md-3 text-center">
-          <h2>Profile</h2>
-            <img class="img-circle" src="./images/profile.png" alt="Generic placeholder image" width="140" height="140">
+          
+            <img class="img-circle profile" src="./images/profile.png"  width="140" height="140">
 
           </div>
 
         <div class="col-sm-9">
+          <h2>Profile</h2>
           <div class="well"color="black">
 
             <p>Master of Information Technology (Professional) graduate with an excellent work ethic and ability to
@@ -116,7 +121,7 @@ front-e</p>
 
 
           </div>
-        <div id="probarSection" class="col-md-8 text-center">
+        <div id="probarSection" class="col-md-8 bottomline text-center">
           <h2>Technical Skills</h2>
           <div class="progress">
             <div id="python" class="progress-bar" aria-valuenow="70">
@@ -216,7 +221,7 @@ front-e</p>
 
 
           </div>
-         <div class="col-sm-12">
+         <div class="col-sm-12 topline">
            <h2 class="text-center">Portfolio</h2>
            <!-- /.row -->
 
