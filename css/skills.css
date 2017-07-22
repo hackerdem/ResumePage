@@ -20,8 +20,11 @@
 #htmlcss{
   background-color:red;
 }
-.well p{
+p{
   text-align: justify;
+}
+.col-sm-3 p{
+  text-align: center;
 }
 
 
